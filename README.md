@@ -6,9 +6,9 @@ Some projects I have done when learning python.
 - IDE PyCharm 2019.1.3 Community Edition
 - Ubuntu 16.04
 
-# Project List
+# Project Lists
 
-## Webster's Unabridged English Dictionary
+### Webster's Unabridged English Dictionary
 
 This repository contains [*Webster's Unabridged English Dictionary*](https://www.gutenberg.org/ebooks/29765) (from the [Gutenberg Project](https://www.gutenberg.org/), compiled August 22, 2009) in several formats:
 
