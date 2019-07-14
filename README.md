@@ -8,7 +8,7 @@ Some projects I have done when learning python.
 
 # Project Lists
 
-### Webster's Unabridged English Dictionary
+## [english_dic] - Webster's Unabridged English Dictionary
 
 This repository contains [*Webster's Unabridged English Dictionary*](https://www.gutenberg.org/ebooks/29765) (from the [Gutenberg Project](https://www.gutenberg.org/), compiled August 22, 2009) in several formats:
 
