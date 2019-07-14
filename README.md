@@ -1,4 +1,4 @@
-# Learn Oython
+# Learn Python
 Some projects I have done when learning python.
 
 # IDE
