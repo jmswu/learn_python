@@ -4,6 +4,6 @@ from dictionary import Dictionary
 dictionary = Dictionary()
 
 # user input
-input = input("Please enter word:")
+user_input = input("Please enter word:")
 
-print(dictionary.translate(input))
+print(dictionary.translate(user_input))
