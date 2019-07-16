@@ -26,6 +26,8 @@ class Dictionary:
         # find a match
         if word in self.dict_data:
             return self.dict_data[word]
+        elif word.title() in self.dict_data:
+            return self.dict_data[word.title()]
         else:
             # get close match
             did_you_mean = get_close_matches(word, self.dict_data.keys(), cutoff=self.cut_off)
