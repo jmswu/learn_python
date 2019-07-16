@@ -21,13 +21,17 @@ class Dictionary:
         :param word: word to be translate
         :return: meaning of the word, or nothing if the word doesn't exit
         """
-        # change the word to lower case
-        word = word.lower()
+
         # find a match
-        if word in self.dict_data:
-            return self.dict_data[word]
+        if word.lower() in self.dict_data:
+            return self.dict_data[word.lower()
+            ]
         elif word.title() in self.dict_data:
             return self.dict_data[word.title()]
+
+        elif word.upper() in self.dict_data:
+            return self.dict_data[word.upper()]
+
         else:
             # get close match
             did_you_mean = get_close_matches(word, self.dict_data.keys(), cutoff=self.cut_off)
