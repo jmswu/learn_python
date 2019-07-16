@@ -32,7 +32,7 @@ class Dictionary:
             if len(did_you_mean) > 0:
                 return "Did you mean [%s]?\n" % (did_you_mean[0]) + self.dict_data[did_you_mean[0]]
             else:
-                return "[%s] doesn't exit, please check." % word
+                return "[%s] doesn't exit, please double check." % word
 
     def set_cut_off(self, cut_off):
         """
