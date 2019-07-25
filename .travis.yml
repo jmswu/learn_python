@@ -1,5 +1,11 @@
 language: python
+
 python:
   - "2.7"
+
+intall:
+
 before_script: cd english_dict
+
+script:
 
