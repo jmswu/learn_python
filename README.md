@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/jmswu/learn_python.svg?branch=master)](https://travis-ci.com/jmswu/learn_python)
+
 # Learn Python
 Some projects I have done when learning python.
 
