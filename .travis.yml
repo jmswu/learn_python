@@ -5,7 +5,9 @@ python:
 
 intall:
 
-before_script: cd english_dict
+before_script: 
+cd english_dict
+ls
 
 script: test.sh
 
