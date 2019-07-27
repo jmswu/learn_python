@@ -4,7 +4,7 @@
 Some projects I have done when learning python.
 
 # Environment
-- Python v3.5.2
+- Python v3.7
 - IDE PyCharm 2019.1.3 Community Edition
 - Ubuntu 16.04
 
