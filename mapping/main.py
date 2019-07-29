@@ -15,10 +15,11 @@ elev_list = list(data["ELEV"])
 def color_maker(elevation):
     if elevation < 1500:
         return "green"
-    elif elevation >= 1500 and elevation < 2500:
+    elif 1500 <= elevation < 2500:
         return "orange"
     else:
         return "red"
+
 
 # create feature group
 feature_group = folium.FeatureGroup(name="my feature group")
@@ -32,4 +33,3 @@ for name, lat, lon, elev in zip(names_list, lat_list, lon_list, elev_list):
 # add feature group and save a file
 mapObj.add_child(feature_group)
 mapObj.save("map1.html")
-
