@@ -30,8 +30,15 @@ for name, lat, lon, elev in zip(names_list, lat_list, lon_list, elev_list):
                                           popup=elev,
                                           icon=folium.Icon(color=color_maker(elev))))
 
+# lambda style function is too long
+# just break it down to here
+lambda_style_function = lambda x: {"fillColor": "green" if x["properties"]["POP2005"] < 10000000
+else "orange" if 15000000 <= x["properties"]["POP2005"] < 50000000
+else "red"}
+
 # add world layer
-feature_group.add_child(folium.GeoJson(data=(open("world.json", 'r', encoding="UTF-8-sig")).read()))
+word_data = open("world.json", "r", encoding="utf-8-sig").read()
+feature_group.add_child(folium.GeoJson(data=word_data, style_function=lambda_style_function))
 
 # add feature group and save a file
 mapObj.add_child(feature_group)
