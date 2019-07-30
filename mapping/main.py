@@ -2,7 +2,7 @@ import folium
 import pandas
 
 # create map object
-mapObj = folium.Map(location=[37.2093588, -113.8991741], zoom_start=5)
+mapObj = folium.Map(location=[37.2093588, -113.8991741], zoom_start=5, tiles="my folium map")
 
 # extract coordinate data from a CVS file with pandas
 data = pandas.read_csv("Volcanoes.txt")
@@ -42,4 +42,9 @@ feature_group.add_child(folium.GeoJson(data=word_data, style_function=lambda_sty
 
 # add feature group and save a file
 mapObj.add_child(feature_group)
+
+# add layer control
+mapObj.add_child(folium.LayerControl())
+
+# create map
 mapObj.save("map1.html")
