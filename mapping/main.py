@@ -2,7 +2,7 @@ import folium
 import pandas
 
 # create map object
-mapObj = folium.Map(location=[37.2093588, -113.8991741], zoom_start=5, tiles="my folium map")
+mapObj = folium.Map(location=[37.2093588, -113.8991741], zoom_start=5, tiles="my python map", attr="hello")
 
 # extract coordinate data from a CVS file with pandas
 data = pandas.read_csv("Volcanoes.txt")
@@ -22,13 +22,14 @@ def color_maker(elevation):
 
 
 # create feature group
-feature_group = folium.FeatureGroup(name="my feature group")
+fg_volcano = folium.FeatureGroup(name="volcano")
+fg_geojason = folium.FeatureGroup(name="geojason")
 
 # load file into feature group
 for name, lat, lon, elev in zip(names_list, lat_list, lon_list, elev_list):
-    feature_group.add_child(folium.Marker(location=[lat, lon],
-                                          popup=elev,
-                                          icon=folium.Icon(color=color_maker(elev))))
+    fg_volcano.add_child(folium.Marker(location=[lat, lon],
+                                       popup=elev,
+                                       icon=folium.Icon(color=color_maker(elev))))
 
 # lambda style function is too long
 # just break it down to here
@@ -38,10 +39,11 @@ else "red"}
 
 # add world layer
 word_data = open("world.json", "r", encoding="utf-8-sig").read()
-feature_group.add_child(folium.GeoJson(data=word_data, style_function=lambda_style_function))
+fg_geojason.add_child(folium.GeoJson(data=word_data, style_function=lambda_style_function))
 
 # add feature group and save a file
-mapObj.add_child(feature_group)
+mapObj.add_child(fg_volcano)
+mapObj.add_child(fg_geojason)
 
 # add layer control
 mapObj.add_child(folium.LayerControl())
