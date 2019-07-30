@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# get local path
+pwd
+
 # test different condition
 echo "hello" | python3 main.py
 echo "USA" | python3 main.py
