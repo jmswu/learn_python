@@ -30,6 +30,8 @@ for name, lat, lon, elev in zip(names_list, lat_list, lon_list, elev_list):
                                           popup=elev,
                                           icon=folium.Icon(color=color_maker(elev))))
 
+feature_group.add_child(folium.GeoJson(data=(open("world.json", 'r', encoding="UTF-8-sig")).read()))
+
 # add feature group and save a file
 mapObj.add_child(feature_group)
 mapObj.save("map1.html")
