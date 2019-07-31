@@ -6,6 +6,9 @@ python:
 before_install:
   - echo "before_install"
 
+install:
+  - pip install -r .travis.requirements.txt
+
 before_script: 
   - cd english_dict
   - ls
