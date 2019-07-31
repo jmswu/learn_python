@@ -4,11 +4,13 @@ python:
   - "3.7"
 
 intall:
+  - pip3 install pandas
+  - pip3 install folim
 
 before_script: 
- - cd english_dict
- - ls
+  - cd english_dict
+  - ls
 
 script: 
- - ./test.sh
+  - ./test.sh
 
