@@ -11,7 +11,9 @@ Some projects I have done when learning python.
 # Project Lists
 
 * [english_dic] - Webster's Unabridged English Dictionary
-* [next project] - what this project does
+* [pandas] - just play around with pandas
+* [folium]- just play around with folium
+* [add blocker] - to be finished
 
 ## [english_dic] - Webster's Unabridged English Dictionary
 
@@ -25,6 +27,12 @@ This repository contains [*Webster's Unabridged English Dictionary*](https://www
 | JSON file (compact, reduced whitespace) | **dictionary_compact.json** |
 | JSON file (includes linebreaks, slightly more readable) | **dictionary.json** |
 | JSON file as array of 26 dictionaries (A-Z) | **dictionary_alpha_arrays.json** |
-## Next project
 
-what this project does.
+## [pandas]
+Just play around with pandas
+
+## [folium]
+Made word map with different markers, and layers
+
+## [ad blocker]
+This one could be interesting.
