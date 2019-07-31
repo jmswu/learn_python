@@ -1,6 +1,8 @@
 import folium
 import pandas
 
+print("hello map app")
+
 # create map object
 mapObj = folium.Map(location=[37.2093588, -113.8991741], zoom_start=5, tiles="my python map", attr="hello")
 
