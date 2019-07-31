@@ -13,3 +13,8 @@ echo "alala" | python3 main.py
 cd ..
 cd learn_pandas
 python3 main.py
+
+# go to mapping folder
+cd ..
+cd mapping
+python3 main.py
