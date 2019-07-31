@@ -6,10 +6,6 @@ python:
 before_install:
   - echo "before_install"
 
-intall:
-  - pip install pandas
-  - pip install folium
-
 before_script: 
   - cd english_dict
   - ls
