@@ -13,7 +13,7 @@ Some projects I have done when learning  python.
 * [english_dic] - Webster's Unabridged English Dictionary
 * [pandas] - just play around with pandas
 * [folium]- just play around with folium
-* [add blocker] - to be finished
+* [GUI] - playing with tkinter
 
 ## [english_dic] - Webster's Unabridged English Dictionary
 
@@ -28,11 +28,3 @@ This repository contains [*Webster's Unabridged English Dictionary*](https://www
 | JSON file (includes linebreaks, slightly more readable) | **dictionary.json** |
 | JSON file as array of 26 dictionaries (A-Z) | **dictionary_alpha_arrays.json** |
 
-## [pandas]
-Just play around with pandas
-
-## [folium]
-Made word map with different markers, and layers
-
-## [ad blocker]
-This one could be interesting.
